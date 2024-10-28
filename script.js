@@ -1,19 +1,36 @@
 let display = document.getElementById('display')
+var  conta = []
 
 function adicionar(n) {
-    display.value += n
-    
+
+        conta.push(n)
+        display.value += n
+
 }
 
+function eliminar() {
+    conta.pop()
+    display.value = ``
+    for (let pos in conta) {
+        display.value += `${conta[pos]}`
+    }
+}
+
+
 function linpar(){
+    for (let pos in conta){
+        conta.pop()
+    }
     display.value = ''
 }
 
 function calcular(){
     try {
         var res = eval(display.value)
+        linpar()
         display.value = res
-        var conta =[res]
+        
+        conta.push(res)
     }
     catch(error){
         display.value = 'ERRO'
