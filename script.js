@@ -3,9 +3,15 @@ var  conta = []
 
 function adicionar(n) {
 
+    if(display.value != `undefined` && `ERRO`){
         conta.push(n)
         display.value += n
-
+    }
+    else{
+        display.value = ''
+        conta.push(n)
+        display.value += n
+    }
 }
 
 function eliminar() {

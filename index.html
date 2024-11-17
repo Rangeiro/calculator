@@ -12,34 +12,28 @@
         <div id="container">
             <input readonly id="display">
             <div class="btn">
-                <div id="numeros">
-                    <button onclick="adicionar(1)">1</button>
-                    <button onclick="adicionar(2)">2</button>
-                    <button onclick="adicionar(3)">3</button>
-                    <button onclick="adicionar(4)">4</button>
-                    <button onclick="adicionar(5)">5</button>
-                    <button onclick="adicionar(6)">6</button>
-                    <button onclick="adicionar(7)">7</button>
-                    <button onclick="adicionar(8)">8</button>
-                    <button onclick="adicionar(9)">9</button>
-                </div>
+                <button onclick="adicionar('%')">%</button>
+                <button onclick="linpar()">C</button>
+                <button  onclick="adicionar('^')">^</button>
+                <button onclick="eliminar()">Del</button>
 
-                <div id="topo">
-                    <button onclick="linpar()">C</button>
-                    <button onclick="eliminar()">Del</button>
-                    <button onclick="adicionar('*')">*</button>
-                    <button onclick="adicionar('/')">/</button>
-                </div>
+                <button onclick="adicionar(1)">1</button>
+                <button onclick="adicionar(2)">2</button>
+                <button onclick="adicionar(3)">3</button>
+                <button onclick="adicionar('*')">*</button>
                 
-                <div id="left">
-                    <button  onclick="adicionar('-')">-</button>
-                    <button onclick="adicionar('+')">+</button>
-                    <button id="soma" onclick="calcular()">=</button>
-                </div>
-                <div id="baixo">
-                    <button id="zero" onclick="adicionar(0)">0</button>
-                    <button onclick="adicionar('.')">.</button>
-                </div>
+                <button onclick="adicionar(4)">4</button>
+                <button onclick="adicionar(5)">5</button>
+                <button onclick="adicionar(6)">6</button>
+                <button onclick="adicionar('/')">/</button>
+                <button onclick="adicionar(7)">7</button>
+                <button onclick="adicionar(8)">8</button>
+                <button onclick="adicionar(9)">9</button>
+                <button  onclick="adicionar('-')">-</button>
+                <button onclick="adicionar('.')">.</button><button onclick="adicionar(0)">0</button>
+                <button id="soma" onclick="calcular()">=</button>
+                <button onclick="adicionar('+')">+</button>
+                
             </div>
         </div>
     </div>
